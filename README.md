@@ -86,10 +86,6 @@
 - Project defines: `_SECURE_SCL=0`, `_CRT_NON_CONFORMING_SWPRINTFS`.
 - Target name: **maxexport** → `maxexp.dle` per `.def` file.
 
-### Minimal diagnostic dumper (optional)
-
-If you need a quick human‑readable dump for debugging, wrap your binary writer with a `#ifdef DEBUG_DUMP` and write a `.txt` next to the output containing hierarchy and mesh stats (vertex/face counts, material names, map channels, user‑props size). This is helpful in PR reviews.
-
 ## 📄 License
 
 If this is an open‑source portfolio sample, consider adding a permissive license (MIT/BSD‑2‑Clause). *No license file was found in this snapshot.*
