@@ -1,6 +1,6 @@
-# maxExport (3ds Max Scene Exporter)
+# maxExport (3ds Max 2022 Scene Exporter)
 
-> A production‑oriented 3ds Max **SceneExport** plug‑in that exports node hierarchy, meshes, and materials into a compact custom format (`.rz`). This repository is intended for my GitHub portfolio and demonstrates non‑trivial Max SDK work: geometry traversal, material flattening, tangent basis, and user property capture.
+> A production‑oriented 3ds Max **SceneExport** plug‑in that exports node hierarchy, meshes, and materials into a compact custom format (`.rz`).
 
 ## ✨ Features
 
@@ -13,8 +13,6 @@
 - **Skin awareness**: detects `ISkin` so skinned nodes can be handled (export path present, retargeting optional).
 - **Unicode‑safe I/O helpers**: text writer supports UTF‑8 / UTF‑16 encodings for any sidecar text data.
 - **x64 build** for modern Max; MSVC toolset **v141**.
-
-> Note: I did not find explicit LZ4/Zstd hooks in this snapshot. If "geometry compression" is required, see the roadmap below for suggested integration points.
 
 ## 📁 Project layout
 
@@ -33,7 +31,7 @@
 
 1. **Prerequisites**
    - **Visual Studio 2017+** (toolset **v141** works; newer MSVC toolsets are typically fine).
-   - **3ds Max SDK** for your target Max version (set *environment variables* as below).
+   - **3ds Max 2022 SDK** for your target Max version (set *environment variables* as below).
    - Target architecture: **x64**.
 
 2. **Environment**
@@ -57,21 +55,11 @@
 ## ▶️ Use
 
 1. In 3ds Max: **File → Export… / Export Selected…**
-2. Choose **RZ** from the file type drop‑down (extension: `.rz`).
+2. Choose **rz** from the file type drop‑down (extension: `.rz`).
 3. Pick options (if available), then export.
 4. The exporter walks the scene, captures node transforms, meshes, materials, UVs, normals/tangents, and the **User Properties** buffer.
 
 > The exporter writes **binary** data. If you need a text/JSON dump for quick inspection, see the *Developer Notes* below for a small diagnostic function suggestion.
-
-## 🧪 Tested surface (snapshot)
-
-- **SDK pathing** via `$(MaxSdkInc)`.
-- Compiles as **x64** with **v141** toolset.
-- Scene traversal with `TriObject` conversion, materials enumeration, UVs, and normal/tangent streams.
-- User properties collection via `GetUserPropBuffer`.
-- Binary writer with Unicode text helpers.
-
-> Detected from source analysis; adapt to your SDK version as needed.
 
 ## 🧭 Roadmap / nice‑to‑haves
 
