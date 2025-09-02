@@ -89,8 +89,3 @@ If you need a quick human‑readable dump for debugging, wrap your binary writer
 ## 📄 License
 
 If this is an open‑source portfolio sample, consider adding a permissive license (MIT/BSD‑2‑Clause). *No license file was found in this snapshot.*
-
----
-
-**Author:** Yuriy Vikhanov  
-**Last updated:** 2025-09-02
