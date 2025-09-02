@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/yuriy3122/Ryze-Studio/blob/main/logo.jpeg" />
+</p>
+
 # maxExport (3ds Max 2022 Scene Exporter)
 
 > A production‑oriented 3ds Max **SceneExport** plug‑in that exports node hierarchy, meshes, and materials into a compact custom format (`.rz`).
