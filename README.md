@@ -68,15 +68,11 @@
 ## 🧭 Roadmap / nice‑to‑haves
 
 - **Geometry compression**: integrate **LZ4** (frame API) or **Zstd** at the chunk level. Insert after vertex/index buffers are serialized.
-- **Progress & cancel**: hook 3ds Max `Interface::ProgressStart/End/Update` for responsive long exports.
 - **Smoothing & explicit normals**: ensure `MeshNormalSpec` is respected when present; fall back to computed normals otherwise.
 - **Tangent basis**: validate MikkTSpace equivalence if a renderer requires a specific basis.
 - **Instancing**: detect duplicate meshes via geometry hashing and emit instances to shrink file size.
 - **Materials**: export `Texmap` graphs or bake a compact material description (IDs, parameters, map filenames).
 - **Skin/anim**: if you need animation, extend to export `ISkin` weights and optional transform tracks.
-- **MaxScript/MXS entrypoint**: expose a function like `maxExport.export fileName:<path> selected:<bool>` for batch pipelines.
-- **CMake**: add a CMake toolchain for multi‑SDK, multi‑MSVC builds.
-- **CI**: GitHub Actions matrix building against several 3ds Max SDKs (cache SDK paths via secrets).
 
 ## 🧩 Developer notes
 
@@ -85,7 +81,3 @@
 - Reported file extension: `.rz` (via `Ext(int)` override).
 - Project defines: `_SECURE_SCL=0`, `_CRT_NON_CONFORMING_SWPRINTFS`.
 - Target name: **maxexport** → `maxexp.dle` per `.def` file.
-
-## 📄 License
-
-If this is an open‑source portfolio sample, consider adding a permissive license (MIT/BSD‑2‑Clause). *No license file was found in this snapshot.*
