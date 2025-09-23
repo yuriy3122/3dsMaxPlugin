@@ -65,7 +65,7 @@
 5. Binary .RZ file "Reader", C# example: GeometryMesh.cs.
 
 <p align="center">
-  <img src="https://github.com/yuriy3122/Ryze-Studio/blob/main/3dsMaxModel.jpg" />
+  <img src="https://github.com/yuriy3122/Ryze-Studio/blob/main/Model.jpg" />
 </p>
 
 <p align="center">
