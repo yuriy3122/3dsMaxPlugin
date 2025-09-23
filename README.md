@@ -68,10 +68,6 @@
   <img src="https://github.com/yuriy3122/Ryze-Studio/blob/main/Model.jpg" />
 </p>
 
-<p align="center">
-  <img src="https://github.com/yuriy3122/Ryze-Studio/blob/main/RYZE%20Studio.jpg" />
-</p>
-
 > The exporter writes **binary** data. If you need a text/JSON dump for quick inspection, see the *Developer Notes* below for a small diagnostic function suggestion.
 
 ## 🧭 Roadmap / nice‑to‑haves
