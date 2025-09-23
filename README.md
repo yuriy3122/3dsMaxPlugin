@@ -62,6 +62,10 @@
 2. Choose **rz** from the file type drop‑down (extension: `.rz`).
 3. Pick options (if available), then export.
 4. The exporter walks the scene, captures node transforms, meshes, materials, UVs, normals/tangents, and the **User Properties** buffer.
+5. Binary .RZ file "Reader", C# example: GeometryMesh.cs.
+
+<img src="https://github.com/yuriy3122/Ryze-Studio/blob/main/3dsMaxModel.jpeg" alt="Screenshot">
+<img src="https://github.com/yuriy3122/Ryze-Studio/blob/main/RYZE%20Studio.jpg" alt="Screenshot">
 
 > The exporter writes **binary** data. If you need a text/JSON dump for quick inspection, see the *Developer Notes* below for a small diagnostic function suggestion.
 
