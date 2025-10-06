@@ -58,7 +58,7 @@
 2. Choose **rz** from the file type drop‑down (extension: `.rz`).
 3. Pick options (if available), then export.
 4. The exporter walks the scene, captures node transforms, meshes, materials, UVs, normals/tangents, and the **User Properties** buffer.
-5. Binary .RZ file "Reader", C# example: GeometryMesh.cs.
+5. The example of binary .RZ file reader: GeometryMesh.cs (C#).
 
 <p align="center">
   <img src="https://github.com/yuriy3122/3dsMaxPlugin/blob/main/Model.jpg" />
